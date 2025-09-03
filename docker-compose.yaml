@@ -55,6 +55,7 @@ services:
     ports:
       - "5677:80"
     environment:
+      - TZ=Europe/Istanbul
       - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
     volumes:
